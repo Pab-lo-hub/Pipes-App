@@ -3,14 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
-import {ButtonModule} from 'primeng/button';
+import {AccordionModule} from 'primeng/accordion';     //accordion and accordion tab
+import { PrimeNgModule } from './prime-ng/prime-ng.module';
+import { SharedModule } from './shared/shared.module';
+
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AccordionModule,
+    PrimeNgModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
